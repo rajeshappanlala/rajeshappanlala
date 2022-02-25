@@ -1,0 +1,55 @@
+f3d58f054a304bd581f2e5c1a7037f06
+
+
+linux commands for installing java and jenkins
+
+
+java-1.8.0-openjdk.x86_64 (/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/bin/java)
+
+/usr/share/maven
+
+
+     java -version
+  165  java --version
+  166  yum install java-1.8.0-openjdk-devel -y
+  168  java --version
+  169  java -version
+  176  alternatives --config java
+  177  mvn -version
+  178  mvn --version
+  179  yum install maven -y
+  180  mvn --version
+  181  vim /etc/profile
+  182  vi /etc/profile
+
+export JAVA_HOME=
+export path=$JAVA_HOME/bin:$path
+export  maven_home=
+
+
+  183  source /etc/profile
+  184  echo $JAVA_HOME
+  185  echo $maven_home
+  
+yum install wget
+
+  190    sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+  191    sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+  192    yum install jenkins
+  193  systemctl stop jenkins
+  194  systemctl status jenkins
+  195  systemctl start jenkins
+  196  systemctl status jenkins
+  197  cd /var/lib/jenkins/secrets
+  198  cat initialAdminPassword
+  199  systemctl status jenkins
+  200  history
+  201  cd /var/lib/jenkins/secrets
+  202  cat initialAdminPassword
+  203  systemctl status jenkins
+  204  systemctl stop jenkins
+  205  systemctl start jenkins
+  206  systemctl status jenkins
+  207  history
+[root@ip-172-31-34-46 secrets]#
+
